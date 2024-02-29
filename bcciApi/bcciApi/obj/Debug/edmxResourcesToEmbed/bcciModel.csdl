@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bcciDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Series1">
+    <Key>
+      <PropertyRef Name="MatchID" />
+    </Key>
+    <Property Name="MatchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MatchName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Team1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Team2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="MatchDate" Type="DateTime" Precision="0" />
+    <Property Name="Venue" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SeriesID" Type="Int32" />
+    <Property Name="SeriesName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SeriesStartDate" Type="DateTime" Precision="0" />
+    <Property Name="SeriesEndDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="bcciDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Series1" EntityType="Self.Series1" />
+  </EntityContainer>
+</Schema>

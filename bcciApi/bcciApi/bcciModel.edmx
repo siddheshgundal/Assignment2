@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="bcciDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Series1">
+          <Key>
+            <PropertyRef Name="MatchID" />
+          </Key>
+          <Property Name="MatchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MatchName" Type="varchar" MaxLength="255" />
+          <Property Name="Team1" Type="varchar" MaxLength="255" />
+          <Property Name="Team2" Type="varchar" MaxLength="255" />
+          <Property Name="MatchDate" Type="date" />
+          <Property Name="Venue" Type="varchar" MaxLength="255" />
+          <Property Name="SeriesID" Type="int" />
+          <Property Name="SeriesName" Type="varchar" MaxLength="255" />
+          <Property Name="SeriesStartDate" Type="date" />
+          <Property Name="SeriesEndDate" Type="date" />
+        </EntityType>
+        <EntityContainer Name="bcciDBModelStoreContainer">
+          <EntitySet Name="Series1" EntityType="Self.Series1" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="bcciDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Series1">
+          <Key>
+            <PropertyRef Name="MatchID" />
+          </Key>
+          <Property Name="MatchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MatchName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Team1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Team2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MatchDate" Type="DateTime" Precision="0" />
+          <Property Name="Venue" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SeriesID" Type="Int32" />
+          <Property Name="SeriesName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SeriesStartDate" Type="DateTime" Precision="0" />
+          <Property Name="SeriesEndDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="bcciDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Series1" EntityType="Self.Series1" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="bcciDBModelStoreContainer" CdmEntityContainer="bcciDBEntities">
+          <EntitySetMapping Name="Series1">
+            <EntityTypeMapping TypeName="bcciDBModel.Series1">
+              <MappingFragment StoreEntitySet="Series1">
+                <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+                <ScalarProperty Name="MatchName" ColumnName="MatchName" />
+                <ScalarProperty Name="Team1" ColumnName="Team1" />
+                <ScalarProperty Name="Team2" ColumnName="Team2" />
+                <ScalarProperty Name="MatchDate" ColumnName="MatchDate" />
+                <ScalarProperty Name="Venue" ColumnName="Venue" />
+                <ScalarProperty Name="SeriesID" ColumnName="SeriesID" />
+                <ScalarProperty Name="SeriesName" ColumnName="SeriesName" />
+                <ScalarProperty Name="SeriesStartDate" ColumnName="SeriesStartDate" />
+                <ScalarProperty Name="SeriesEndDate" ColumnName="SeriesEndDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

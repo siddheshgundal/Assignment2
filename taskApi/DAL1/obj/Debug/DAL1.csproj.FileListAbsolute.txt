@@ -1,0 +1,11 @@
+C:\Users\siddheshg\source\repos\taskApi\DAL1\bin\Debug\DAL1.dll.config
+C:\Users\siddheshg\source\repos\taskApi\DAL1\bin\Debug\DAL1.dll
+C:\Users\siddheshg\source\repos\taskApi\DAL1\bin\Debug\DAL1.pdb
+C:\Users\siddheshg\source\repos\taskApi\DAL1\bin\Debug\EntityFramework.dll
+C:\Users\siddheshg\source\repos\taskApi\DAL1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\siddheshg\source\repos\taskApi\DAL1\bin\Debug\EntityFramework.xml
+C:\Users\siddheshg\source\repos\taskApi\DAL1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\siddheshg\source\repos\taskApi\DAL1\obj\Debug\DAL1.csprojResolveAssemblyReference.cache
+C:\Users\siddheshg\source\repos\taskApi\DAL1\obj\Debug\DAL1.csproj.CoreCompileInputs.cache
+C:\Users\siddheshg\source\repos\taskApi\DAL1\obj\Debug\DAL1.dll
+C:\Users\siddheshg\source\repos\taskApi\DAL1\obj\Debug\DAL1.pdb

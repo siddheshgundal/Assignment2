@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bcciDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Series1">
+    <Key>
+      <PropertyRef Name="MatchID" />
+    </Key>
+    <Property Name="MatchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MatchName" Type="varchar" MaxLength="255" />
+    <Property Name="Team1" Type="varchar" MaxLength="255" />
+    <Property Name="Team2" Type="varchar" MaxLength="255" />
+    <Property Name="MatchDate" Type="date" />
+    <Property Name="Venue" Type="varchar" MaxLength="255" />
+    <Property Name="SeriesID" Type="int" />
+    <Property Name="SeriesName" Type="varchar" MaxLength="255" />
+    <Property Name="SeriesStartDate" Type="date" />
+    <Property Name="SeriesEndDate" Type="date" />
+  </EntityType>
+  <EntityContainer Name="bcciDBModelStoreContainer">
+    <EntitySet Name="Series1" EntityType="Self.Series1" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

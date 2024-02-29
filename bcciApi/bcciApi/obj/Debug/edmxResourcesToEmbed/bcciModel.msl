@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bcciDBModelStoreContainer" CdmEntityContainer="bcciDBEntities">
+    <EntitySetMapping Name="Series1">
+      <EntityTypeMapping TypeName="bcciDBModel.Series1">
+        <MappingFragment StoreEntitySet="Series1">
+          <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+          <ScalarProperty Name="MatchName" ColumnName="MatchName" />
+          <ScalarProperty Name="Team1" ColumnName="Team1" />
+          <ScalarProperty Name="Team2" ColumnName="Team2" />
+          <ScalarProperty Name="MatchDate" ColumnName="MatchDate" />
+          <ScalarProperty Name="Venue" ColumnName="Venue" />
+          <ScalarProperty Name="SeriesID" ColumnName="SeriesID" />
+          <ScalarProperty Name="SeriesName" ColumnName="SeriesName" />
+          <ScalarProperty Name="SeriesStartDate" ColumnName="SeriesStartDate" />
+          <ScalarProperty Name="SeriesEndDate" ColumnName="SeriesEndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
